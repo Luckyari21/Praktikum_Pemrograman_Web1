@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Pendaftaran Kursus</title>
+  </head>
+  <body>
+    <form method="post">
+
+      <h2>Pendaftaran Kursus</h2>
+
+        <font type="arial" size="6" > Data Diri </font>
+        <br> </br>
+        <font type="arial" size="3" >
+        Nama : <input type="text" name="nama" >
+        <br>
+        <br>
+        Nim : <input type="text" name="nim" value="" size="9" maxlength="13">
+        <br>
+        <br>
+        E-mail : <input type="text" name="email">
+        <br>
+        <br>
+        Tanggal Lahir : <input type="date" name="tgl_lahir">
+        <br>
+        <br>
+        </font>
+
+      Jenis Kelamin :
+      <br>
+      <input type="radio" name="jenis_kelamin" value="L"> Laki-laki
+      <br>
+      <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+      <br>
+
+      Pilih Program Kursus :
+      <br>
+      <input type="checkbox" name="kursus_1" value="csharp"> C#
+      <br>
+      <input type="checkbox" name="kursus_2" value="java"> Java
+      <br>
+      <input type="checkbox" name="kursus_3" value="sql"> SQL
+      <br>
+      <input type="checkbox" name="kursus_4" value="html_php"> HTML dan PHP
+      <br>
+
+      Pilihan Hari/Jam Kursus :
+      <select name="jadwal">
+        <option value="1">Senin - Rabu/09.00 - 11.00</option>
+        <option value="2">Senin - Rabu/13.00 - 15.00</option>
+        <option value="3">Selasa - Kamis/09.00 - 11.00</option>
+        <option value="4">Selasa - Kamis/13.00 - 15.00</option>
+      </select>
+      <br>
+      <br>
+
+      Komentar Anda :
+      <br>
+      <textarea name="komentar" cols="45" rows="5"></textarea>
+      <br>
+      <br>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+      <input type="button" value="Cancel">
+
+    </form>
+  </body>
+</html>
